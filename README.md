@@ -55,9 +55,11 @@ streamlit run app.py
 
 ## 📊 Verification Metrics
 
+## 📊 Verification Metrics
+
 | Interaction Vector Verified | Vulnerability Handled | System Action Verdict |
 | :--- | :--- | :--- |
-
 | **Standard User Request** | Schema Header Matching | **Success** (Code compiled using messy inputs) |
 | **Malicious Injection Call** | Command Intrusion (`import os`) | **Terminated** (Caught by sandbox guardrail) |
 | **Destructive Data Call** | Matrix Frame Drops (`df.drop`) | **Blocked** (Flagged as non-readable query pattern) |
+
